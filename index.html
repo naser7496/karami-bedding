@@ -20,16 +20,14 @@
 
   <!-- Header Section -->
   <header class="navbar">
-    <div class="logo">
-      <h1>کالای خواب کرمی</h1>
-    </div>
+    <!-- Navigation Menu (Top Right) -->
+    <nav class="nav-menu">
+      <a href="#products"><i class="fa-solid fa-box-open"></i> محصولات</a>
+      <a href="#magazine"><i class="fa-solid fa-book-open"></i> مجله</a>
+      <a href="#socials"><i class="fa-solid fa-share-nodes"></i> شبکه های اجتماعی</a>
+    </nav>
     
     <div class="nav-controls">
-      <div class="social-header">
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-        <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
       <button id="theme-toggle" class="theme-btn" aria-label="تغییر تم">
         <i class="fa-solid fa-moon"></i>
       </button>
@@ -39,8 +37,9 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-overlay">
-      <h2>آرامش و زیبایی در اتاق خواب شما</h2>
-      <p>  عرضه و ارسال ملزومات خواب با برترین کیفیت به سراسر کشور</p>
+      <h1>کالای خواب کرمی</h1>
+      <!-- Classy Brand Statement -->
+      <p class="brand-tagline">تجربه‌ای متفاوتی از آرامش اصیل و کیفیت بی‌بدیل در حریم خواب شما</p>
       <a href="#products" class="btn-primary">مشاهده محصولات</a>
     </div>
   </section>
@@ -66,28 +65,28 @@
           </ul>
         </div>
 
-        <!-- Pillows Card -->
+        <!-- Pillows Card (Clickable to Page) -->
         <a href="pillows.html" class="product-card">
           <div class="card-icon"><i class="fa-solid fa-mattress-pillow"></i></div>
           <h3>بالش‌ها</h3>
-          <p>مموری فوم، الیافی و ارتوپدیک standard</p>
+          <p>مموری فوم، الیافی و ارتوپدیک</p>
         </a>
 
-        <!-- Sofa Throw Card -->
+        <!-- Sofa Throw Card (Clickable to Page) -->
         <a href="sofa-throw.html" class="product-card">
           <div class="card-icon"><i class="fa-solid fa-couch"></i></div>
           <h3>شال مبل</h3>
-          <p>زیبایی و بهداشت دکوراسیون شما</p>
+          <p>زیبایی و گرمای مطبوع دکوراسیون شما</p>
         </a>
 
-        <!-- Mattress Protector Card -->
+        <!-- Mattress Protector Card (Clickable to Page) -->
         <a href="mattress-protector.html" class="product-card">
           <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
           <h3>محافظ تشک</h3>
           <p>ضدآب و محافظت کامل از تشک شما</p>
         </a>
 
-        <!-- Mattress Cover Card -->
+        <!-- Mattress Cover Card (Clickable to Page) -->
         <a href="mattress-cover.html" class="product-card">
           <div class="card-icon"><i class="fa-solid fa-bed"></i></div>
           <h3>کاور تشک</h3>
@@ -97,44 +96,50 @@
       </div>
     </section>
 
-    <!-- Magazine / Articles Section -->
+    <!-- Magazine / Featured Article Section -->
     <section id="magazine" class="section">
       <h2 class="section-title">مجله کالای خواب</h2>
       
-      <div id="articles-grid" class="articles-grid">
-        <article class="article-card">
-          <h3>چرا استفاده از روبالشی ساتن ابریشم برای مو و پوست توصیه می‌شود؟</h3>
-          <p>ابریشم به دلیل کاهش اصطکاک مانع از موخوره و چین و چروک پوستی در طول خواب شبانه می‌شود...</p>
-          <span class="read-more">ادامه مطلب <i class="fa-solid fa-arrow-left"></i></span>
-        </article>
+      <!-- Single Featured Article -->
+      <article class="featured-article">
+        <span class="article-badge">مقاله برگزیده</span>
+        <h3>چرا استفاده از روبالشی ساتن ابریشم برای سلامتی پوست و مو ضروری است؟</h3>
+        <p>
+          تماس مداوم پوست و مو با پارچه‌های زبر در طول شب می‌تواند موجب بروز چین و چروک و موخوره شود. 
+          ساتن ابریشم طبیعی با کاهش اصطکاک و حفظ رطوبت طبیعی پوست، سلامت و شادابی را در هنگام خواب برای شما به ارمغان می‌آورد...
+        </p>
+        <a href="article-satin-silk.html" class="read-more">ادامه مطالعه مقاله <i class="fa-solid fa-arrow-left"></i></a>
+      </article>
 
-        <article class="article-card">
-          <h3>راهنمای انتخاب بالش ارتوپدیک مناسب برای گردن درد</h3>
-          <p>انتخاب صحیح بالش می‌تواند از فشارهای وارد بر ستون فقرات کاهش داده و کیفیت خواب را ارتقا دهد...</p>
-          <span class="read-more">ادامه مطلب <i class="fa-solid fa-arrow-left"></i></span>
-        </article>
-      </div>
-
-      <!-- Form to Add Articles -->
-      <div class="add-article-container">
-        <h3>ارسال مقاله جدید</h3>
-        <form id="article-form">
-          <input type="text" id="article-title" placeholder="عنوان مقاله" required>
-          <textarea id="article-content" rows="4" placeholder="خلاصه یا متن مقاله..." required></textarea>
-          <button type="submit" class="btn-primary">انتشار مقاله</button>
+      <!-- Comments & Questions Form (Replaces Add Article) -->
+      <div class="comments-container">
+        <h3>ارسال نظر یا سؤال</h3>
+        <p class="comments-subtitle">سؤالی درباره محصولات دارید یا نظرتان را می‌خواهید بنویسید؟ با ما در میان بگذارید.</p>
+        
+        <form id="comment-form">
+          <div class="form-group-inline">
+            <input type="text" id="user-name" placeholder="نام و نام خانوادگی" required>
+            <input type="text" id="user-contact" placeholder="شماره تماس یا ایمیل (اختیاری)">
+          </div>
+          <textarea id="user-comment" rows="4" placeholder="نظر یا سؤال خود را اینجا بنویسید..." required></textarea>
+          <button type="submit" class="btn-primary">ثبت نظر</button>
         </form>
+
+        <div id="comments-list" class="comments-list">
+          <!-- Comments will appear here dynamically -->
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer>
+  <!-- Footer with Social Links -->
+  <footer id="socials">
     <p>کلیه حقوق برای <strong>کالای خواب کرمی</strong> محفوظ است.</p>
     <div class="social-footer">
-      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-      <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i> اینستاگرام</a>
+      <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i> تلگرام</a>
+      <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i> واتساپ</a>
     </div>
   </footer>
 
