@@ -23,30 +23,30 @@ themeToggleBtn.addEventListener('click', () => {
   }
 });
 
-// Interactive Article Addition
-const articleForm = document.getElementById('article-form');
-const articlesGrid = document.getElementById('articles-grid');
+// Interactive Comments System
+const commentForm = document.getElementById('comment-form');
+const commentsList = document.getElementById('comments-list');
 
-articleForm.addEventListener('submit', (e) => {
+commentForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
-  const titleInput = document.getElementById('article-title');
-  const contentInput = document.getElementById('article-content');
+  const nameInput = document.getElementById('user-name');
+  const commentInput = document.getElementById('user-comment');
 
-  if (titleInput.value.trim() && contentInput.value.trim()) {
-    const newArticle = document.createElement('article');
-    newArticle.classList.add('article-card');
+  if (nameInput.value.trim() && commentInput.value.trim()) {
+    const newComment = document.createElement('div');
+    newComment.classList.add('comment-item');
 
-    newArticle.innerHTML = `
-      <h3>${titleInput.value}</h3>
-      <p>${contentInput.value}</p>
-      <span class="read-more">ادامه مطلب <i class="fa-solid fa-arrow-left"></i></span>
+    newComment.innerHTML = `
+      <h4>${nameInput.value}</h4>
+      <p>${commentInput.value}</p>
     `;
 
-    articlesGrid.prepend(newArticle);
+    commentsList.prepend(newComment);
 
-    // Reset Form
-    titleInput.value = '';
-    contentInput.value = '';
+    // Clear Inputs
+    nameInput.value = '';
+    document.getElementById('user-contact').value = '';
+    commentInput.value = '';
   }
 });
