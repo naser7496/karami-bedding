@@ -3,65 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>کالای خواب کرمی</title>
-  <link rel="stylesheet" href="style.css">
+  <title>کالای خواب کرمی | Karami Bedding</title>
+  
+  <!-- Vazirmatn Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>کالای خواب کرمی</h1>
-    <button id="theme-toggle" aria-label="تغییر تم">
-      <i class="fa-solid fa-moon"></i>
-    </button>
+  <!-- Header Section -->
+  <header class="navbar">
+    <div class="logo">
+      <h1>کالای خواب کرمی</h1>
+    </div>
+    
+    <div class="nav-controls">
+      <div class="social-header">
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <button id="theme-toggle" class="theme-btn" aria-label="تغییر تم">
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </div>
   </header>
 
-  <main class="hero-section">
-    <div class="overlay">
-      <h2>تجربه‌ای از آرامش و خواب راحت</h2>
-      <p>دسته‌بندی محصولات ما را مشاهده کنید</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>آرامش و زیبایی در خواب شما</h2>
+      <p>تولید و عرضه ملزومات خواب با برترین کیفیت ابریشم و الیاف ارتوپدیک</p>
+      <a href="#products" class="btn-primary">مشاهده محصولات</a>
     </div>
-  </main>
-
-  <section class="products-container">
-    
-    <div class="product-card dropdown">
-      <h3>محصولات ساتن ابریشم <i class="fa-solid fa-chevron-down"></i></h3>
-      <ul class="dropdown-menu">
-        <li><a href="satin-pillowcase.html">روبالشی ساتن ابریشم</a></li>
-        <li><a href="eye-mask.html">چشم بند</a></li>
-        <li><a href="sleep-cap.html">کلاه خواب</a></li>
-        <li><a href="curly-ribbon.html">کرلی ربان</a></li>
-      </ul>
-    </div>
-
-    <a href="pillows.html" class="product-card">
-      <h3>بالش (مموری فوم، الیافی، ارتوپدیک)</h3>
-    </a>
-
-    <a href="sofa-throw.html" class="product-card">
-      <h3>شال مبل</h3>
-    </a>
-
-    <a href="mattress-protector.html" class="product-card">
-      <h3>محافظ تشک</h3>
-    </a>
-
-    <a href="mattress-cover.html" class="product-card">
-      <h3>کاور تشک</h3>
-    </a>
-
   </section>
 
+  <!-- Main Content Container -->
+  <main class="container">
+    
+    <!-- Products Section -->
+    <section id="products" class="section">
+      <h2 class="section-title">محصولات ما</h2>
+      <div class="product-grid">
+        
+        <!-- Satin Silk Submenu Card -->
+        <div class="product-card dropdown-card">
+          <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3>محصولات ساتن ابریشم</h3>
+          <p>لطافت بی‌نظیر برای پوست و مو</p>
+          <ul class="sub-products">
+            <li><a href="satin-pillowcase.html"><i class="fa-solid fa-angle-left"></i> روبالشی ساتن ابریشم</a></li>
+            <li><a href="eye-mask.html"><i class="fa-solid fa-angle-left"></i> چشم بند</a></li>
+            <li><a href="sleep-cap.html"><i class="fa-solid fa-angle-left"></i> کلاه خواب</a></li>
+            <li><a href="curly-ribbon.html"><i class="fa-solid fa-angle-left"></i> کرلی ربان</a></li>
+          </ul>
+        </div>
+
+        <!-- Pillows Card -->
+        <a href="pillows.html" class="product-card">
+          <div class="card-icon"><i class="fa-solid fa-mattress-pillow"></i></div>
+          <h3>بالش‌ها</h3>
+          <p>مموری فوم، الیافی و ارتوپدیک standard</p>
+        </a>
+
+        <!-- Sofa Throw Card -->
+        <a href="sofa-throw.html" class="product-card">
+          <div class="card-icon"><i class="fa-solid fa-couch"></i></div>
+          <h3>شال مبل</h3>
+          <p>زیبایی و گرمای مطبوع دکوراسیون شما</p>
+        </a>
+
+        <!-- Mattress Protector Card -->
+        <a href="mattress-protector.html" class="product-card">
+          <div class="card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>محافظ تشک</h3>
+          <p>ضدآب و محافظت کامل از تشک شما</p>
+        </a>
+
+        <!-- Mattress Cover Card -->
+        <a href="mattress-cover.html" class="product-card">
+          <div class="card-icon"><i class="fa-solid fa-bed"></i></div>
+          <h3>کاور تشک</h3>
+          <p>کیفیت و دوام بالا با پارچه‌های تنفس‌پذیر</p>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Magazine / Articles Section -->
+    <section id="magazine" class="section">
+      <h2 class="section-title">مجله کالای خواب</h2>
+      
+      <div id="articles-grid" class="articles-grid">
+        <article class="article-card">
+          <h3>چرا استفاده از روبالشی ساتن ابریشم برای مو و پوست توصیه می‌شود؟</h3>
+          <p>ابریشم به دلیل کاهش اصطکاک مانع از موخوره و چین و چروک پوستی در طول خواب شبانه می‌شود...</p>
+          <span class="read-more">ادامه مطلب <i class="fa-solid fa-arrow-left"></i></span>
+        </article>
+
+        <article class="article-card">
+          <h3>راهنمای انتخاب بالش ارتوپدیک مناسب برای گردن درد</h3>
+          <p>انتخاب صحیح بالش می‌تواند از فشارهای وارد بر ستون فقرات کاهش داده و کیفیت خواب را ارتقا دهد...</p>
+          <span class="read-more">ادامه مطلب <i class="fa-solid fa-arrow-left"></i></span>
+        </article>
+      </div>
+
+      <!-- Form to Add Articles -->
+      <div class="add-article-container">
+        <h3>ارسال مقاله جدید</h3>
+        <form id="article-form">
+          <input type="text" id="article-title" placeholder="عنوان مقاله" required>
+          <textarea id="article-content" rows="4" placeholder="خلاصه یا متن مقاله..." required></textarea>
+          <button type="submit" class="btn-primary">انتشار مقاله</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p>ارتباط با ما:</p>
-    <div class="social-links">
-      <a href="https://instagram.com/yourpage" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://t.me/yourchannel" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
-      <a href="https://wa.me/yournumber" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <p>کلیه حقوق برای <strong>کالای خواب کرمی</strong> محفوظ است.</p>
+    <div class="social-footer">
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://t.me" target="_blank" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://wa.me" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
   </footer>
 
+  <!-- External JS -->
   <script src="script.js"></script>
 </body>
 </html>
